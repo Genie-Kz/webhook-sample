@@ -22,8 +22,6 @@ jobs:
           include-prerelease: true
       - name: Install dependencies
         run: dotnet restore
-      - name: Change Directory To ConsoleApp
-        run: cd consoleApp
       - name: Build
         run: dotnet build --no-restore
       - name: Change Directory To Test
