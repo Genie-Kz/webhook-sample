@@ -1,4 +1,4 @@
-consleApp.Test;
+namespace consleApp.Test;
 
 public class CalculatorTest
 {
