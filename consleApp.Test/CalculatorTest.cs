@@ -1,4 +1,5 @@
 namespace consleApp.Test;
+using consoleApp;
 
 public class CalculatorTest
 {
