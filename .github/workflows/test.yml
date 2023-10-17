@@ -22,7 +22,11 @@ jobs:
           include-prerelease: true
       - name: Install dependencies
         run: dotnet restore
+      - name: Change Directory To ConsoleApp
+        run: cd consoleApp
       - name: Build
         run: dotnet build --no-restore
+      - name: Change Directory To Test
+        run: cd ../consleApp.Test
       - name: Test
         run: dotnet test --no-restore --verbosity normal
